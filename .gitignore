@@ -1,5 +1,5 @@
 /node_modules/
 dist
 TODO.md
-/src/api/key.js
+src/api/key.js
 
