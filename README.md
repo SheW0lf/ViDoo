@@ -11,7 +11,17 @@ git clone https://github.com/${your_username}/vidoo
 ```javascript
 npm install
 ```
-4. Run the application
+4. Get an API key for YouTube Data API
+```code
+https://developers.google.com/youtube/v3/getting-started
+```
+5. replace the filler text in /src/api/key.js with your api key
+```javascript
+module.exports = {
+    key: 'Your key here'
+}
+```
+6. Save the file, and run the application
 ```javascript
 > npm run dev
 ```
