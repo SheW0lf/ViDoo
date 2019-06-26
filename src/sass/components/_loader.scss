@@ -1,0 +1,13 @@
+.loader{
+    grid-column: 1 / -1;
+    align-items: center;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    justify-content: center;
+
+    h1{
+        margin-bottom: 2rem;
+    }
+}

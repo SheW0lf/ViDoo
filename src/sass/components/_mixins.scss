@@ -1,0 +1,26 @@
+
+@mixin responsive($bp){
+    @if $bp == phone {
+        @media only screen and (max-width: 37.5em){ //600px
+            @content;
+        }
+    }
+
+    @if $bp == tab-port{
+        @media only screen and (max-width: 56.25em){ //900px
+            @content;
+        }
+    }
+
+    @if $bp == tab-land{
+        @media only screen and (max-width: 75em){ //1200px
+            @content;
+        }
+    }
+
+    @if $bp == lg{
+        @media only screen and (max-width: 93.75em){ //1500px
+            @content;
+        }
+    }
+}

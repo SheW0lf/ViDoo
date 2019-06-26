@@ -1,0 +1,35 @@
+.search{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    @include responsive(tab-land){
+        width: 50%;
+    }
+
+    @include responsive(tab-port){
+        width: 60%;
+    }
+
+    &__input{
+        border: none;
+        border-radius: 3px;
+        padding: 1rem;
+        transition: all .3s;
+        width: 60%;
+
+        &:focus{
+            box-shadow: 0 .5rem 1rem rgba($gray, .5);
+            outline: none;
+            width: 80%;
+        }
+    }
+
+    &__icon{
+        align-items: center;
+        color: $blue;
+        display: flex;
+        font-size: 2rem;
+        margin-left: -3rem;
+    }
+
+}

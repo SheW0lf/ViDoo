@@ -1,0 +1,48 @@
+.card{
+    align-items: center;
+    background-color: $white;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba($gray, .6);
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 2rem;
+    min-height: 10rem;
+    overflow: hidden;
+    transition: all .3s;
+    width: 100%;
+
+    @include responsive(tab-port){
+        min-height: 20rem;
+    }
+
+    @include responsive(phone){
+        min-height: 15rem;
+    }
+
+    &:hover{
+        box-shadow: 0 1rem 2rem rgba($gray, .6);
+        transform: translateY(-5px);
+
+    }
+
+    &:active{
+        box-shadow: 0 .5rem 1rem rgba($gray, .6);
+        transform: translateY(0);
+    }
+
+    &__img{
+        max-width: 20rem;
+        @include responsive(tab-port){
+            max-width: 40rem;
+        }
+
+        @include responsive(phone){
+            max-width: 30rem;
+        }
+    }
+
+    &__title{
+        margin: 0;
+        padding: 0 1rem;
+    }
+}
